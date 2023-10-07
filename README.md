@@ -26,14 +26,28 @@ create the .env, and configure your database connection
 
 ![image](https://github.com/LordBluue3/Urubu-Do-Pix/assets/58037508/411a11ee-e1c9-4fe0-8e64-12eaf84ec01f)
 
-To install the dependencies
+To install the php dependencies
 
 ```bash
 composer install
 ```
 <br/>
 
-To run the server
+To install the node dependencies
+```bash
+npm install
+```
+<br/>
+
+To run the vite server
+
+```bash
+npm run dev
+```
+
+<br/>
+
+To run the php server
 
 ```bash
 php artisan serve
