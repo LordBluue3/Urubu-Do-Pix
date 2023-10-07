@@ -13,9 +13,7 @@
         <div class="container_title">
             <h1>Urubu do Pix</h1>
         </div>
-        <p>rendendo muito mais que os invetimentos atuais do mercado!
-        <p>
-            <br />
+        <p>rendendo muito mais que os invetimentos atuais do mercado!</p>
         <p class="date">07/10/2023</p>
-        <div>
-        @endsection
+    <div>
+@endsection
