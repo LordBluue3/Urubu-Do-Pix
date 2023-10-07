@@ -20,26 +20,36 @@ The admin will check the total amount collected from the users.
 The admin can create, delete, edit, and read posts about 'Urubu do Pix'.
 
 
-#How to run this project?
+# How to run this project?
 
 create the .env, and configure your database connection
 
 ![image](https://github.com/LordBluue3/Urubu-Do-Pix/assets/58037508/411a11ee-e1c9-4fe0-8e64-12eaf84ec01f)
 
-To install the php dependencies
+<br/>
+
+<h4>To install the php dependencies</h4>
 
 ```bash
 composer install
 ```
 <br/>
 
-To install the node dependencies
+<h4>To run the migrations</h4>
+
+```bash
+php artisan migrate
+```
+<br/>
+
+<h4>To install the node dependencies</h4>
+
 ```bash
 npm install
 ```
 <br/>
 
-To run the vite server
+<h4>To run the vite server</h4>
 
 ```bash
 npm run dev
@@ -47,11 +57,13 @@ npm run dev
 
 <br/>
 
-To run the php server
+<h4>To run the php server</h4>
 
 ```bash
 php artisan serve
 ```
+
+<br/>
 
 # To Do?
 
@@ -60,9 +72,9 @@ php artisan serve
 Since this test is not for front-end, I focused on the back-end. <br/>
 
 <ul>
-    <li>Home Page</li>
-    <li>Login Page</li>
-    <li>Register Page</li>
+    <li><s>Home Page</s></li>
+    <li><s>Login Page</s></li>
+    <li><s>Register Page</s></li>
     <li>User Dashboard</li>
     <li>Admin Dashboard</li>
 </ul>
@@ -72,8 +84,8 @@ Since this test is not for front-end, I focused on the back-end. <br/>
 I decided to write everything on my own so that they can evaluate my code. <br/>
 
 <ul>
-    <li>Login System</li>
-    <li>Register System</li>
+    <li><s>Login System</s></li>
+    <li><s>Register System</s></li>
     <li>Deposit Money System</li>
     <li>Edit the information (user) System</li>
     <li>System for posting updates about 'Urubu do Pix'. (crud)</li>
@@ -83,9 +95,9 @@ I decided to write everything on my own so that they can evaluate my code. <br/>
 <h3>Database</h3>
 
 <ul>
-    <li>User Table</li>
-    <li>Admin Table</li>
-    <li>Post Table</li>
+    <li><s>User Table</s></li>
+    <li><s>Admin Table</s></li>
+    <li><s>Post Table</s></li>
 </ul>
 
 
