@@ -13,16 +13,26 @@ header{
     align-items: center;
     width: 100%;
     background-color: #77B6A8;
-    height: 4rem;
+    height: 5rem;
 
     nav{
-        width: 50%;
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        img{
+            width: 50px;
+        }
         ul{
             display: flex;
             flex-direction: row;
             justify-content: space-between;
+            align-items: center;
+            width: 250px;
             li{
                 list-style: none;
+               
 
                 a{
                     text-decoration: none;
@@ -39,6 +49,7 @@ header{
             }
             
         }
+     
     }
 
 }
