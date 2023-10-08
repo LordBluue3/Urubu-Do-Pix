@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     @vite(['resources/scss/layout/app.scss'])
+    @vite(['resources/scss/layout/dashboard.scss'])
     <title></title>
     @stack('head')
 </head>
@@ -14,7 +15,10 @@
             <ul>
                 <li><a href="{{route('dashboard.user')}}">Rendimentos</a></li>
                 <li><a href="{{route('dashboard.user.information')}}">Informações</a></li>
-                <li><a href="{{route('register')}}">Sair</a></li>
+                <form method="POST" action="{{ route('logout.user') }}">
+                    @csrf
+                    <button type="submit" class="logout" >Sair</button>
+                </form>
             </ul>
         </nav>
     </header>
