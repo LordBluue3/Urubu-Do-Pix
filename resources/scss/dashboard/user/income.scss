@@ -1,0 +1,75 @@
+.container_income {
+    .container_card_results {
+        border: 3px solid #96969A;
+        background-color: #96969a2a;
+        ;
+        display: flex;
+        align-items: center;
+        width: 300px;
+        height: 100px;
+        justify-content: space-around;
+        border-radius: 10px;
+
+        .money {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 500;
+            font-size: 25px;
+        }
+
+        .container_yield {
+            background-color: #77B6A8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+            width: 120px;
+            padding: 0.2rem;
+
+            .triangle {
+                width: 0;
+                height: 0;
+                border-left: 4px solid transparent;
+                border-right: 4px solid transparent;
+                border-bottom: 7px solid #1e6e5d;
+                margin-right: 0.5rem;
+            }
+
+            p {
+                font-family: 'Roboto', sans-serif;
+                color: #1e6e5d;
+            }
+        }
+    }
+
+    .container_buttons {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 3rem;
+
+        button {
+            width: 100px;
+            height: 40px;
+            border-radius: 10px;
+            background-color: #77B6A8;
+            color: white;
+            font-weight: 500;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        button:hover {
+            background-color: #96969A;
+            color: #000;
+            cursor: pointer;
+        }
+
+        #withdraw {
+            background-color: #df2a48;
+        }
+
+        #withdraw:hover {
+            background-color: #96969A;
+            color: #000;
+            cursor: pointer;
+        }
+    }
+}
