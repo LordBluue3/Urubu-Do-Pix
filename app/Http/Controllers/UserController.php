@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Admin;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Route;
 
 class UserController extends Controller
 {
@@ -30,7 +30,7 @@ class UserController extends Controller
 
 
             $user->save();
-            return redirect('/home')->with('success', 'User created successfully');
+            return redirect('/')->with('success', 'User created successfully');
         } catch (\Exception $e) {
             return redirect('/register')->with('error', 'User creation failed: ' . $e->getMessage());
         }
@@ -57,10 +57,14 @@ class UserController extends Controller
     {
         $money = $request->input('money');
         $user = Auth::user();
-        if ($user) {
+        $admin = Admin::find(1);
+        if ($user && $admin) {
             $user->money = $user->money + $money;
             $user->fake_money = $user->fake_money + $money;
             $user->save();
+
+            $admin->money = $admin->money + $money;
+            $admin->save();
         }
 
         return redirect('/dashboard/user');
