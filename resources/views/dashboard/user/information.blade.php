@@ -20,3 +20,14 @@
 
     </div>
 @endsection
+
+@push('scripts')
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.6/jquery.inputmask.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('#phone').inputmask('(99) 9 9999-9999');
+        });
+    </script>
+@endpush
