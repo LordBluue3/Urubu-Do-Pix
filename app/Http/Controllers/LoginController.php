@@ -17,9 +17,11 @@ class LoginController extends Controller
             $email = $request->input('email');
             $password = $request->input('password');
 
-            if(Auth::attempt(['email'=> $email, 'password'=> $password])){
-                return redirect('/');
-            }else{
+            if (Auth::guard('web')->attempt(['email' => $email, 'password' => $password])) {
+                return redirect('/dashboard/user');
+            } else if (Auth::guard('admins')->attempt(['email' => $email, 'password' => $password])) {
+                return redirect('/dashboard/admin');
+            } else {
                 return redirect('/register');
             }
         } catch (\Exception $e) {
