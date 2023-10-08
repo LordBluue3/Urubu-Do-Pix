@@ -31,12 +31,15 @@ Route::post('/register', [UserController::class, 'store'])->name('register.store
 Route::prefix('/dashboard/user')->middleware(['auth:web'])->group(function(){
     Route::get('/', [IncomeController::class, 'show'])->name('dashboard.user');
     Route::get('/information', [InformationController::class, 'show'])->name('dashboard.user.information');
-
+    
 });
+Route::put('/dashboard/user/information', [UserController::class, 'updateInformation'])->name('dashboard.user.information.update');
+
 Route::prefix('/dashboard/admin')->middleware(['auth:admins'])->group(function(){
     Route::get('/', [ListUserController::class, 'show'])->name('dashboard.admin');
     Route::get('/posts', [PostNewController::class, 'show'])->name('dashboard.admin.posts');
     
 });
+Route::put('/dashboard/user/deposit', [UserController::class, 'updateMoney'])->name('dashboard.user.deposit.update');
 
 
