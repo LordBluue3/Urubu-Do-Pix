@@ -8,11 +8,12 @@
     <div class="container_information">
 
         <h1>Atualizar Informações</h1>
-        <form action="{{ route('login.store') }}" method="POST">
+        <form action="{{ route('dashboard.user.information.update') }}" method="POST">
             @csrf
-            <input type="text"name="name" placeholder="Nome" required>
-            <input type="email" name="email" placeholder="Email" required>
-            <input id="phone" name="phone" type="tel" placeholder="(11) 9 9999-9999" required>
+            @method('PUT')
+            <input type="text"name="name" value="{{$name}}" placeholder="Nome" required>
+            <input type="email" name="email" value="{{$email}}" placeholder="Email" required>
+            <input id="phone" name="phone" value="{{$phone}}" type="tel" placeholder="(11) 9 9999-9999" required>
             <div class="container_button">
                 <button>Atualizar</button>
             </div>
