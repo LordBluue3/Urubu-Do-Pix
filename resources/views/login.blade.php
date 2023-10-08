@@ -1,7 +1,7 @@
 @extends('layout/app')
 
 @push('head')
-    @vite(['resources/scss/login.scss'])
+    @vite(['resources/scss/form.scss'])
 @endpush
 
 @section('content')

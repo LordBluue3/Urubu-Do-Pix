@@ -1,7 +1,7 @@
 @extends('layout/user-dashboard')
 
 @push('head')
-    @vite(['resources/scss/register.scss'])
+    @vite(['resources/scss/form.scss'])
     @vite(['resources/scss/dashboard/user/income.scss'])
 @endpush
 
