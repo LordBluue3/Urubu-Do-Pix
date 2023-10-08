@@ -32,8 +32,7 @@ Route::post('/register', [RegisterController::class, 'store'])->name('register.s
 Route::prefix('/dashboard/user')->middleware(['auth:web'])->group(function(){
     Route::get('/', [IncomeController::class, 'show'])->name('dashboard.user');
     Route::get('/information', [InformationController::class, 'show'])->name('dashboard.user.information');
-    
-    
+       
 });
 Route::prefix('/dashboard/admin')->middleware(['auth:admins'])->group(function(){
     Route::get('/', [ListUserController::class, 'show'])->name('dashboard.admin');
