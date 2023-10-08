@@ -71,7 +71,7 @@ Since this test is not for front-end, I focused on the back-end. <br/>
     <li><s>Login Page</s></li>
     <li><s>Register Page</s></li>
     <li><s>User Dashboard</s></li>
-    <li>Admin Dashboard</li>
+    <li><s>Admin Dashboard</s></li>
 </ul>
 
 <h3>Back-End</h3>
