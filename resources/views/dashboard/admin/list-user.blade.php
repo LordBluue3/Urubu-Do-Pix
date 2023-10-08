@@ -9,34 +9,51 @@
     <div class="container_list_user">
         <div class="container_income">
             <div class="container_card_results">
-                <p class="money">R$ 1000</p>
-    
+                <p class="money">R$ {{ $admin->money }}</p>
+
                 <div class="container_yield">
                     <div class="triangle"></div>
                     <p>Arrecadado</p>
                 </div>
             </div>
             <div class="container_buttons">
-                <button>Sacar</button>
+                <form action="{{ route('dashboard.admin.draw.update') }}" method="POST">
+                    @csrf
+                    @method('PUT')
+                    <button type="submit">Sacar</button>
+                </form>
             </div>
         </div>
 
         <div class="container_list">
             <div class="about_list">
-                <div><p>Nome</p></div>
-                <div><p>Dinheiro</p></div>
+                <div>
+                    <p>Nome</p>
+                </div>
+                <div>
+                    <p>Dinheiro</p>
+                </div>
                 <div class="container_button">
                     <button disabled>Deletar</button>
                 </div>
             </div>
-            <div class="list">
-                <div><p>mikael</p></div>
-                <div><p>R$ 1000</p></div>
-                <div class="container_button">
-                    <button>Deletar</button>
+            @foreach ($users as $user)
+                <div class="list">
+                    <div>
+                        <p>{{ $user->name }}</p>
+                    </div>
+                    <div>
+                        <p>R$ {{ $user->money }}</p>
+                    </div>
+                    <div class="container_button">
+                        <form action="/dashboard/admin/delete/{{ $user->id }}" method="POST">
+                            @csrf
+                            @method('DELETE')
+                            <button type="submit">Deletar</button>
+                        </form>
+                    </div>
                 </div>
-            </div>
+            @endforeach
         </div>
-
     </div>
 @endsection
