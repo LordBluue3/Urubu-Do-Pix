@@ -33,29 +33,24 @@ create the .env, and configure your database connection
 ```bash
 composer install
 ```
-<br/>
 
 <h4>To run the migrations</h4>
 
 ```bash
 php artisan migrate
 ```
-<br/>
 
 <h4>To install the node dependencies</h4>
 
 ```bash
 npm install
 ```
-<br/>
 
 <h4>To run the vite server</h4>
 
 ```bash
 npm run dev
 ```
-
-<br/>
 
 <h4>To run the php server</h4>
 
@@ -75,7 +70,7 @@ Since this test is not for front-end, I focused on the back-end. <br/>
     <li><s>Home Page</s></li>
     <li><s>Login Page</s></li>
     <li><s>Register Page</s></li>
-    <li>User Dashboard</li>
+    <li><s>User Dashboard</s></li>
     <li>Admin Dashboard</li>
 </ul>
 
