@@ -25,8 +25,13 @@ class LoginController extends Controller
                 return redirect('/register');
             }
         } catch (\Exception $e) {
-            return redirect('/login');
+            return redirect()->back();
 
         }
+    }
+    public function logout(Request $request)
+    {
+        Auth::logout();
+        return redirect('/');
     }
 }
