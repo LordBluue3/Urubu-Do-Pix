@@ -5,6 +5,7 @@
 @endpush
 
 @section('content')
+    <h1>Cadastre-se</h1>
     <form action="{{ route('register.store') }}" method="POST">
         @csrf
         <input type="text"name="name" placeholder="Nome" required>
