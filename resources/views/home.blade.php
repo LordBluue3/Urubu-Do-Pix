@@ -12,12 +12,14 @@
         </div>
         <div class="container_posts">
             <h1 class="title_news">Novidades</h1>
+            @forEach($posts as $post)
             <div class="container_post">
                 <div class="container_title">
-                    <h1 class="title_post">Urubu do Pix</h1>
+                    <h1 class="title_post">{{$post->title}}</h1>
                 </div>
-                <p>rendendo muito mais que os invetimentos atuais do mercado!</p>
-                <p class="date">07/10/2023</p>
+                <p>{{$post->text}}</p>
+                <p class="date">{{$post->date}}</p>
             </div>
+            @endforeach
     </section>
 @endsection
