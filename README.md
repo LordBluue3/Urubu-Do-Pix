@@ -6,11 +6,22 @@
 
 # About the test
 
+<h5>Email Noweb: </h5>
+
 "Criar um crud  com no mínimo 2 tabelas tirando as padrões do laravel, precisa ter autenticação, algum teste personalizado (nada muito complexo), utilizar seeder e factory para algo (sem ser as padrões do laravel) não precisa ser em todas as tabelas, porém precisa ser utilizado pelo menos uma vez, pode utilizar qualquer biblioteca que for do seu agrado como alpinejs, livewire, filament... fica a sua escolha.
 
 Caso queira pode também criar um endpoint de api (não obrigatório).
 
 Nesse teste analisaremos sua organização de código e seu conhecimento no framework, nem um projeto complexo, quanto mais simples melhor."
+
+<h5>Translate: </h5>
+
+Create a CRUD system with a minimum of 2 tables, excluding Laravel's default features. It needs to include authentication, some custom testing (nothing too complex), and use seeders and factories for something (other than Laravel's defaults). It doesn't need to be applied to all tables, but it must be used at least once. You are free to use any library you prefer, such as Alpine.js, Livewire, Filament, and others – the choice is yours.
+
+You may also optionally create an API endpoint if you wish.
+
+In this test, we will assess your code organization and your knowledge of the framework. The goal is not to create a complex project; simpler is better.
+
 
 # How this project work? 
 The user can register on the site and deposit money to render, but they cannot withdraw their money!
@@ -18,7 +29,6 @@ The user can register on the site and deposit money to render, but they cannot w
 The admin can view users in the list, read user information, and delete users.
 The admin will check the total amount collected from the users.
 The admin can create, delete, edit, and read posts about 'Urubu do Pix'.
-
 
 # How to run this project?
 
@@ -76,13 +86,13 @@ Since this test is not for front-end, I focused on the back-end. <br/>
 
 <h3>Back-End</h3>
 
-I decided to write everything on my own so that they can evaluate my code. <br/>
+I decided to write everything on my own so that Noweb can evaluate my code. <br/>
 
 <ul>
     <li><s>Login System</s></li>
     <li><s>Register System</s></li>
-    <li>Deposit Money System</li>
-    <li>Edit the information (user) System</li>
+    <li><s>Deposit Money System</s></li>
+    <li><s>Edit the information (user) System</s></li>
     <li>System for posting updates about 'Urubu do Pix'. (crud)</li>
     <li>Seeders and Factory</li>
 </ul>
