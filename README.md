@@ -117,7 +117,7 @@ I decided to write everything on my own so that Noweb can evaluate my code. <br/
 ![loginRegister](https://github.com/LordBluue3/Urubu-Do-Pix/assets/58037508/dac74f07-9b37-4d7e-97ff-d2f5cce7c447)
 
 
-<h3>Admin Dashboard Dashboard</h3>
+<h3>Admin Dashboard</h3>
 
 ![dashboardAdmin](https://github.com/LordBluue3/Urubu-Do-Pix/assets/58037508/91fc36d2-47e7-4707-bbe2-d7b3aa0d08f6)
 
