@@ -16,7 +16,7 @@ header{
     height: 5rem;
 
     nav{
-        width: 80%;
+        width: 90%;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
@@ -42,11 +42,15 @@ header{
                     color: black;
                 }
                 a:hover{
-                    color: #96969A;
+                    color: white;
                     cursor: pointer;
     
                 }
             }
+            
+        }
+        @media screen and (min-width: 800px) {
+            width: 90%;
             
         }
      
