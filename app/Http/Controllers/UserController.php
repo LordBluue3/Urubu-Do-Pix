@@ -9,10 +9,6 @@ use Illuminate\Support\Facades\Auth;
 
 class UserController extends Controller
 {
-    public function show()
-    {
-        return view('register');
-    }
     public function store(Request $request, User $user)
     {
         try {
@@ -28,11 +24,10 @@ class UserController extends Controller
             $user->money = 0;
             $user->fake_money = 0;
 
-
             $user->save();
-            return redirect('/')->with('success', 'User created successfully');
+            return redirect()->route('home')->with('success', 'User created successfully');
         } catch (\Exception $e) {
-            return redirect('/register')->with('error', 'User creation failed: ' . $e->getMessage());
+            return redirect()->route('register')->with('error', 'User creation failed: ' . $e->getMessage());
         }
 
     }
@@ -50,7 +45,7 @@ class UserController extends Controller
             $userRegister->email = $email;
             $userRegister->save();
         }
-        return redirect('/dashboard/user/information');
+        return redirect()->route('dashboard.user.information');
     }
 
     public function updateMoney(Request $request)
@@ -67,7 +62,7 @@ class UserController extends Controller
             $admin->save();
         }
 
-        return redirect('/dashboard/user');
+        return redirect()->route('dashboard.user');
 
     }
 }
