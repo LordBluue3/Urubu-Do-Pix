@@ -94,7 +94,7 @@ I decided to write everything on my own so that Noweb can evaluate my code. <br/
     <li><s>Deposit Money System</s></li>
     <li><s>Edit the information (user) System</s></li>
     <li><s>System for posting updates about 'Urubu do Pix'. (crud)</s></li>
-    <li>Seeders and Factory</li>
+    <li><s>Seeders and Factory</s></li>
 </ul>
 
 <h3>Database</h3>
