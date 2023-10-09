@@ -11,11 +11,11 @@
         <input type="text"name="name" placeholder="Nome" required>
         <input type="email" name="email" placeholder="Email" required>
         <input id="phone" name="phone" type="tel" placeholder="(11) 9 9999-9999" required>
-        <input type="password" name="password" placeholder="Senha" required>
-        <input type="password" name="repassword" placeholder="Repita a senha" required>
+        <input type="password" id="password" name="password" placeholder="Senha" required>
+        <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Repita a senha" required>
         <div class="container_button">
             <p>Se já tem uma conta <a href="{{ route('login') }}">Logar<a></p>
-            <button type="submit">Cadastre-se</button>
+            <button type="button" onclick="validator()">Cadastre-se</button>
         </div>
     </form>
 @endsection
@@ -27,5 +27,18 @@
         $(document).ready(function() {
             $('#phone').inputmask('(99) 9 9999-9999');
         });
+
+        function validator() {
+            password = document.getElementById('password').value;
+            confirmPassword = document.getElementById('confirmPassword').value;
+
+            if (password.trim() != confirmPassword.trim()) {
+                alert("As senhas estão diferentes");
+            }else{
+                document.querySelector('form').submit();
+            }
+        }
     </script>
+
+    
 @endpush
