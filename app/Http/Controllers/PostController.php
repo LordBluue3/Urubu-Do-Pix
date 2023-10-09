@@ -20,7 +20,7 @@ class PostController extends Controller
     {
         $post->create([ 
             'title' => $request->title,
-            'description' => $request->description,
+            'text' => $request->description,
             'date' => now()->format('d/m/Y')
         ]);
         return back();
