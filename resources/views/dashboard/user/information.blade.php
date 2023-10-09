@@ -11,9 +11,9 @@
         <form action="{{ route('dashboard.user.information.update') }}" method="POST">
             @csrf
             @method('PUT')
-            <input type="text"name="name" value="{{$name}}" placeholder="Nome" required>
-            <input type="email" name="email" value="{{$email}}" placeholder="Email" required>
-            <input id="phone" name="phone" value="{{$phone}}" type="tel" placeholder="(11) 9 9999-9999" required>
+            <input type="text"name="name" value="{{auth()->user()->name}}" placeholder="Nome" required>
+            <input type="email" name="email" value="{{auth()->user()->email}}" placeholder="Email" required>
+            <input id="phone" name="phone" value="{{auth()->user()->phone}}" type="tel" placeholder="(11) 9 9999-9999" required>
             <div class="container_button">
                 <button>Atualizar</button>
             </div>
