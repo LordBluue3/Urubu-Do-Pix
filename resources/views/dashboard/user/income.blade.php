@@ -35,7 +35,7 @@
         </div>
 
         <div class="container_card_results">
-            <p class="money">R$ {{ $fakeMoney }}</p>
+            <p class="money">R$ {{ auth()->user()->fake_money }}</p>
 
             <div class="container_yield">
                 <div class="triangle"></div>
