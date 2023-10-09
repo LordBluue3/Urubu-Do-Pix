@@ -25,6 +25,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+/*Start Public Routes* */
 Route::get('/', [HomeController::class, 'show'])->name('home');
 
 Route::get('/login', [LoginController::class, 'show'])->name('login');
@@ -33,15 +34,20 @@ Route::post('/login', [LoginController::class, 'store'])->name('login.store');
 Route::get('/register', [UserController::class, 'show'])->name('register');
 Route::post('/register', [UserController::class, 'store'])->name('register.store');
 
+/*End Public Routes* */
+
+/*Start User Dashboard* */
 Route::prefix('/dashboard/user')->middleware(['auth:web'])->group(function () {
-    Route::get('/', [IncomeController::class, 'show'])->name('dashboard.user');
+    Route::get('/', IncomeController::class)->name('dashboard.user');
     Route::get('/information', [InformationController::class, 'show'])->name('dashboard.user.information');
     Route::post('/logout', [LoginController::class, 'logout'])->name('logout.user');
 
 });
 Route::put('/dashboard/user/information', [UserController::class, 'updateInformation'])->name('dashboard.user.information.update');
 Route::put('/dashboard/user/deposit', [UserController::class, 'updateMoney'])->name('dashboard.user.deposit.update');
+/*End User Dashboard* */
 
+/*Start Admin Dashboard* */
 Route::prefix('/dashboard/admin')->middleware(['auth:admins'])->group(function () {
     Route::get('/', [ListUserController::class, 'show'])->name('dashboard.admin');
     Route::get('/posts', [PostNewController::class, 'show'])->name('dashboard.admin.posts');
@@ -55,3 +61,5 @@ Route::put('/dashboard/admin/draw', [AdminController::class, 'update'])->name('d
 Route::delete('/dashboard/admin/delete/{id}', [AdminController::class, 'delete'])->name('dashboard.admin.user.delete');
 Route::delete('/dashboard/admin/post/delete/{id}', [PostController::class, 'delete'])->name('dashboard.admin.post.delete');
 Route::put('/dashboard/admin/edit/post/{id}', [PostController::class, 'update'])->name('admin.edit.post.update');
+
+/*End Admin Dashboard* */
