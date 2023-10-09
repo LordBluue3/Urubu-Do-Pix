@@ -67,6 +67,11 @@ npm run dev
 ```bash
 php artisan serve
 ```
+<h4>To run the seeders</h4>
+
+```bash
+ php artisan migrate:fresh --seed
+```
 
 <br/>
 
