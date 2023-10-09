@@ -73,6 +73,12 @@ php artisan serve
  php artisan migrate:fresh --seed
 ```
 
+<h4>To run the tests (yesss, i made tests)</h4>
+
+```bash
+ php artisan test
+```
+
 <br/>
 
 # To Do?
@@ -100,6 +106,7 @@ I decided to write everything on my own so that Noweb can evaluate my code. <br/
     <li><s>Edit the information (user) System</s></li>
     <li><s>System for posting updates about 'Urubu do Pix'. (crud)</s></li>
     <li><s>Seeders and Factory</s></li>
+    <li><s>Tests</s></li>
 </ul>
 
 <h3>Database</h3>
