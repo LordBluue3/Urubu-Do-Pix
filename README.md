@@ -93,7 +93,7 @@ I decided to write everything on my own so that Noweb can evaluate my code. <br/
     <li><s>Register System</s></li>
     <li><s>Deposit Money System</s></li>
     <li><s>Edit the information (user) System</s></li>
-    <li>System for posting updates about 'Urubu do Pix'. (crud)</li>
+    <li><s>System for posting updates about 'Urubu do Pix'. (crud)</s></li>
     <li>Seeders and Factory</li>
 </ul>
 
@@ -104,7 +104,27 @@ I decided to write everything on my own so that Noweb can evaluate my code. <br/
     <li><s>Admin Table</s></li>
     <li><s>Post Table</s></li>
 </ul>
+<br>
 
+# Pages
+
+<h3>Home Page</h3>
+
+![image](https://github.com/LordBluue3/Urubu-Do-Pix/assets/58037508/304e1736-99a6-414c-b189-8a91e0998a7b)
+
+<h3>Login and Register Page</h3>
+
+![loginRegister](https://github.com/LordBluue3/Urubu-Do-Pix/assets/58037508/dac74f07-9b37-4d7e-97ff-d2f5cce7c447)
+
+
+<h3>Admin Dashboard</h3>
+
+![dashboardAdmin](https://github.com/LordBluue3/Urubu-Do-Pix/assets/58037508/91fc36d2-47e7-4707-bbe2-d7b3aa0d08f6)
+
+
+<h3>User Dashboard</h3>
+
+![dashboardUser](https://github.com/LordBluue3/Urubu-Do-Pix/assets/58037508/79aca3ea-a59b-4bc7-b869-b966e6ff77e3)
 
 
 
