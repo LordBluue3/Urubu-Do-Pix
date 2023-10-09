@@ -28,7 +28,7 @@ Route::get('/', [HomeController::class, 'show'])->name('home');
 Route::view('/login', 'login')->name('login');
 Route::post('/login', [LoginController::class, 'store'])->name('login.store');
 
-Route::get('/register', [UserController::class, 'show'])->name('register');
+Route::view('/register', 'register')->name('register');
 Route::post('/register', [UserController::class, 'store'])->name('register.store');
 
 /*End Public Routes* */
