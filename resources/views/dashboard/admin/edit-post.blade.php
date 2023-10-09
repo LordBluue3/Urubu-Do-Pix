@@ -7,8 +7,9 @@
 @endpush
 
 @section('content')
+
     <h1>Editar Post</h1>
-    <form action="{{ route('admin.edit.post.update', ['id' => $post->id]) }}" method="POST">
+    <form action="{{ route('admin.edit.post.update', ['post' => $post]) }}" method="POST">
         @csrf
         @method('PUT')
         <input value="{{$post->title}}" name="title" type="text" placeholder="Title" required>
